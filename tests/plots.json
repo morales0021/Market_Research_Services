@@ -1,12 +1,12 @@
 {
-    "id": "chatcmpl-BLbM15nM0ovvUM1CaG8qFXRXMor0I",
+    "id": "chatcmpl-BLcylFegnWZwFTno1T9uC7ghycXcr",
     "choices": [
         {
             "finish_reason": "stop",
             "index": 0,
             "logprobs": null,
             "message": {
-                "content": "{\n  \"charts\": [\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Market Growth Over Time\",\n      \"description\": \"A line graph showing the projected growth of the market research industry in the U.S. over the next five years, along with key milestones such as the introduction of AI in research processes or significant mergers/acquisitions.\",\n      \"x_axis_title\": \"Year\",\n      \"x_values\": [2023, 2024, 2025, 2026, 2027],\n      \"line_series\": [\n        {\n          \"label\": \"Market Size (in Billion USD)\",\n          \"y_values\": [12, 13.5, 15, 16.5, 18]\n        }\n      ]\n    },\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Key Growth Drivers\",\n      \"description\": \"A bar chart displaying the key growth drivers for market research services, such as technological advancements, increased demand for data-driven decision-making, and expanded online survey capabilities.\",\n      \"x_axis_title\": \"Growth Driver\",\n      \"x_values\": [\n        1,\n        2,\n        3,\n        4,\n        5\n      ],\n      \"line_series\": [\n        {\n          \"label\": \"Estimated Impact (scale 1-10)\",\n          \"y_values\": [9, 8, 7, 6, 5]\n        }\n      ]\n    },\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Key Challenges\",\n      \"description\": \"A pie chart illustrating the various challenges faced by market research services, including data privacy concerns, competition from in-house research teams, and rising operational costs.\",\n      \"x_axis_title\": \"Challenge\",\n      \"x_values\": [\n        1,\n        2,\n        3,\n        4,\n        5\n      ],\n      \"line_series\": [\n        {\n          \"label\": \"Percentage of Impact (%)\",\n          \"y_values\": [35, 25, 20, 10, 10]\n        }\n      ]\n    }\n  ]\n}",
+                "content": "{\n  \"charts\": [\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Projected Market Growth of Market Research Services Industry in the U.S. (2020-2025)\",\n      \"description\": \"This chart shows the projected revenue growth of the market research services industry in the U.S. from 2020 to 2025, based on the given CAGR of 3.9%. It illustrates the expected growth over the years, ending with a projected revenue of $36.6 billion by 2025.\",\n      \"x_axis_title\": \"Year\",\n      \"x_values\": [2020, 2021, 2022, 2023, 2024, 2025],\n      \"line_series\": [\n        {\n          \"label\": \"Revenue (in Billion USD)\",\n          \"y_values\": [32.5, 33.7, 34.9, 36.1, 37.3, 36.6]\n        }\n      ]\n    },\n    {\n      \"type_chart\": \"bar_chart\",\n      \"plot_title\": \"Key Growth Drivers of the Market Research Services Industry\",\n      \"description\": \"This bar chart compares the key growth drivers of the market research services industry, showcasing the potential contributions of data-driven decision-making, technological advancements, and the shift towards digital platforms.\",\n      \"x_axis_data\": [\"Data-Driven Decision-Making\", \"Technological Advancements\", \"Shift to Digital Platforms\"],\n      \"x_axis_title\": \"Growth Driver\",\n      \"y_axis_data\": [45, 30, 25],\n      \"y_axis_title\": \"Estimated Impact on Revenue Growth (%)\"\n    },\n    {\n      \"type_chart\": \"pie_chart\",\n      \"plot_title\": \"Challenges Impacting Growth of Market Research Services Industry\",\n      \"description\": \"This pie chart illustrates the proportionate impact of various challenges facing the market research industry, including DIY tools, the pace of technological change, reliance on quantitative data, and economic uncertainties.\",\n      \"values\": [40, 25, 20, 15],\n      \"labels\": [\"Rise of DIY Tools\", \"Pace of Technological Change\", \"Reliance on Quantitative Data\", \"Economic Uncertainties\"]\n    }\n  ]\n}",
                 "refusal": null,
                 "role": "assistant",
                 "annotations": [],
@@ -15,77 +15,63 @@
                     "charts": [
                         {
                             "type_chart": "line_chart",
-                            "plot_title": "Market Growth Over Time",
-                            "description": "A line graph showing the projected growth of the market research industry in the U.S. over the next five years, along with key milestones such as the introduction of AI in research processes or significant mergers/acquisitions.",
+                            "plot_title": "Projected Market Growth of Market Research Services Industry in the U.S. (2020-2025)",
+                            "description": "This chart shows the projected revenue growth of the market research services industry in the U.S. from 2020 to 2025, based on the given CAGR of 3.9%. It illustrates the expected growth over the years, ending with a projected revenue of $36.6 billion by 2025.",
                             "x_axis_title": "Year",
                             "x_values": [
+                                2020,
+                                2021,
+                                2022,
                                 2023,
                                 2024,
-                                2025,
-                                2026,
-                                2027
+                                2025
                             ],
                             "line_series": [
                                 {
-                                    "label": "Market Size (in Billion USD)",
+                                    "label": "Revenue (in Billion USD)",
                                     "y_values": [
-                                        12,
-                                        13.5,
-                                        15,
-                                        16.5,
-                                        18
+                                        32.5,
+                                        33.7,
+                                        34.9,
+                                        36.1,
+                                        37.3,
+                                        36.6
                                     ]
                                 }
                             ]
                         },
                         {
-                            "type_chart": "line_chart",
-                            "plot_title": "Key Growth Drivers",
-                            "description": "A bar chart displaying the key growth drivers for market research services, such as technological advancements, increased demand for data-driven decision-making, and expanded online survey capabilities.",
+                            "type_chart": "bar_chart",
+                            "plot_title": "Key Growth Drivers of the Market Research Services Industry",
+                            "description": "This bar chart compares the key growth drivers of the market research services industry, showcasing the potential contributions of data-driven decision-making, technological advancements, and the shift towards digital platforms.",
+                            "x_axis_data": [
+                                "Data-Driven Decision-Making",
+                                "Technological Advancements",
+                                "Shift to Digital Platforms"
+                            ],
                             "x_axis_title": "Growth Driver",
-                            "x_values": [
-                                1,
-                                2,
-                                3,
-                                4,
-                                5
+                            "y_axis_data": [
+                                45,
+                                30,
+                                25
                             ],
-                            "line_series": [
-                                {
-                                    "label": "Estimated Impact (scale 1-10)",
-                                    "y_values": [
-                                        9,
-                                        8,
-                                        7,
-                                        6,
-                                        5
-                                    ]
-                                }
-                            ]
+                            "y_axis_title": "Estimated Impact on Revenue Growth (%)"
                         },
                         {
-                            "type_chart": "line_chart",
-                            "plot_title": "Key Challenges",
-                            "description": "A pie chart illustrating the various challenges faced by market research services, including data privacy concerns, competition from in-house research teams, and rising operational costs.",
-                            "x_axis_title": "Challenge",
-                            "x_values": [
-                                1,
-                                2,
-                                3,
-                                4,
-                                5
+                            "type_chart": "pie_chart",
+                            "plot_title": "Challenges Impacting Growth of Market Research Services Industry",
+                            "description": "This pie chart illustrates the proportionate impact of various challenges facing the market research industry, including DIY tools, the pace of technological change, reliance on quantitative data, and economic uncertainties.",
+                            "values": [
+                                40,
+                                25,
+                                20,
+                                15
                             ],
-                            "line_series": [
-                                {
-                                    "label": "Percentage of Impact (%)",
-                                    "y_values": [
-                                        35,
-                                        25,
-                                        20,
-                                        10,
-                                        10
-                                    ]
-                                }
+                            "labels": [
+                                "Rise of DIY Tools",
+                                "Pace of Technological Change",
+                                "Reliance on Quantitative Data",
+                                "Economic Uncertainties"
                             ]
                         }
                     ]
@@ -93,15 +79,15 @@
             }
         }
     ],
-    "created": 1744488177,
+    "created": 1744494423,
     "model": "gpt-4o-mini-2024-07-18",
     "object": "chat.completion",
     "service_tier": "default",
     "system_fingerprint": "fp_80cf447eee",
     "usage": {
-        "completion_tokens": 444,
-        "prompt_tokens": 1391,
-        "total_tokens": 1835,
+        "completion_tokens": 465,
+        "prompt_tokens": 1455,
+        "total_tokens": 1920,
         "completion_tokens_details": {
             "accepted_prediction_tokens": 0,
             "audio_tokens": 0,

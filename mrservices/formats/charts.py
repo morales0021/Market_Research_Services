@@ -14,22 +14,27 @@ class LineChart(BaseModel):
     x_axis_title: str               # Label for x-axis (e.g., "Year")
     x_values: List[Union[int, float]] # Shared x-axis values (e.g., years)
     line_series: List[LineSeries]   # One or more lines plotted on the chart
-    
+
+
 class BarChart(BaseModel):
+    type_chart: Literal["bar_chart"]
     plot_title: str
     description: str
     x_axis_data: list[str|int|float]
     x_axis_title: str
     y_axis_data: list[int|float]
     y_axis_title: str
-    type_chart: Literal["bar_chart"]
 
 class PieChart(BaseModel):
+    type_chart: Literal["pie_chart"]
     plot_title: str
     description: str
     values: list[int|float]
     labels: list[str]
-    type_chart: Literal["pie_chart"]
+
 
 class Charts(BaseModel):
     charts: list[PieChart|BarChart|LineChart]
+
+class SingleChart(BaseModel):
+    chart: PieChart|BarChart|LineChart

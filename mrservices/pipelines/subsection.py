@@ -21,17 +21,17 @@ class GetSubsection:
 
     def get_subsection(self, industry, region, subsection, n_words):
 
-        str_subsection = self.get_text(
+        str_subsection = self._get_text(
             industry=industry,
             region=region,
             subsection=subsection,
             n_words=n_words
         )
 
-        json_subsection = self.format_text(str_subsection)
+        json_subsection = self._format_text(str_subsection)
         return json_subsection
 
-    def get_text(self, industry, region, subsection, n_words=400):
+    def _get_text(self, industry, region, subsection, n_words=400):
         """
         Get the text for a specific subsection of the industry and region.
         """
@@ -42,17 +42,16 @@ class GetSubsection:
             n_words=n_words
         )
 
-        data = get_online_natural_completion(
+        self.data_raw = get_online_natural_completion(
             prompt=prompt,
             user_prompt="",
             client=self.client,
             model=self.model
         )
 
-        self.data_raw = data
-        return data.output_text
+        return self.data_raw.output_text
     
-    def format_text(self, text):
+    def _format_text(self, text):
         """
         Format the text into a JSON object
         that contains the content and references.

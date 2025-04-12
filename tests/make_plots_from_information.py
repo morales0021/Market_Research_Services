@@ -6,6 +6,7 @@ from mrservices.completions.completions import (
 
 from mrservices.prompts.plots import (
     PROMPT_CREATE_JSON_PLOTS,
+    PROMPT_CREATE_JSON_PLOTS_2,
     prompt_user_make_plots,
     prompt_text_plots_subsection
     )
@@ -32,7 +33,7 @@ sys_prompt_plots = prompt_text_plots_subsection(
     region=region,
     subsection=subsection
 )
-user_prompt_plots = prompt_user_make_plots(subsection=subsection)
+user_prompt_plots = prompt_user_make_plots(subsection=data)
 
 data = get_online_natural_completion(
     prompt=sys_prompt_plots,
@@ -48,11 +49,11 @@ with open("text_plots_2.json", "w") as f:
     f.write(json.dumps(info, indent=4))
 
 plots_json = get_offline_json_completion(
-    prompt=PROMPT_CREATE_JSON_PLOTS,
+    prompt=PROMPT_CREATE_JSON_PLOTS_2,
     user_prompt=data.output_text,
     format_json=Charts,
     client=client,
-    model=model
+    model="gpt-4o-mini"
 )
 
 print(plots_json)
