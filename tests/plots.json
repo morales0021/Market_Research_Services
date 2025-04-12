@@ -1,0 +1,116 @@
+{
+    "id": "chatcmpl-BLbM15nM0ovvUM1CaG8qFXRXMor0I",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "{\n  \"charts\": [\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Market Growth Over Time\",\n      \"description\": \"A line graph showing the projected growth of the market research industry in the U.S. over the next five years, along with key milestones such as the introduction of AI in research processes or significant mergers/acquisitions.\",\n      \"x_axis_title\": \"Year\",\n      \"x_values\": [2023, 2024, 2025, 2026, 2027],\n      \"line_series\": [\n        {\n          \"label\": \"Market Size (in Billion USD)\",\n          \"y_values\": [12, 13.5, 15, 16.5, 18]\n        }\n      ]\n    },\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Key Growth Drivers\",\n      \"description\": \"A bar chart displaying the key growth drivers for market research services, such as technological advancements, increased demand for data-driven decision-making, and expanded online survey capabilities.\",\n      \"x_axis_title\": \"Growth Driver\",\n      \"x_values\": [\n        1,\n        2,\n        3,\n        4,\n        5\n      ],\n      \"line_series\": [\n        {\n          \"label\": \"Estimated Impact (scale 1-10)\",\n          \"y_values\": [9, 8, 7, 6, 5]\n        }\n      ]\n    },\n    {\n      \"type_chart\": \"line_chart\",\n      \"plot_title\": \"Key Challenges\",\n      \"description\": \"A pie chart illustrating the various challenges faced by market research services, including data privacy concerns, competition from in-house research teams, and rising operational costs.\",\n      \"x_axis_title\": \"Challenge\",\n      \"x_values\": [\n        1,\n        2,\n        3,\n        4,\n        5\n      ],\n      \"line_series\": [\n        {\n          \"label\": \"Percentage of Impact (%)\",\n          \"y_values\": [35, 25, 20, 10, 10]\n        }\n      ]\n    }\n  ]\n}",
+                "refusal": null,
+                "role": "assistant",
+                "annotations": [],
+                "tool_calls": null,
+                "parsed": {
+                    "charts": [
+                        {
+                            "type_chart": "line_chart",
+                            "plot_title": "Market Growth Over Time",
+                            "description": "A line graph showing the projected growth of the market research industry in the U.S. over the next five years, along with key milestones such as the introduction of AI in research processes or significant mergers/acquisitions.",
+                            "x_axis_title": "Year",
+                            "x_values": [
+                                2023,
+                                2024,
+                                2025,
+                                2026,
+                                2027
+                            ],
+                            "line_series": [
+                                {
+                                    "label": "Market Size (in Billion USD)",
+                                    "y_values": [
+                                        12,
+                                        13.5,
+                                        15,
+                                        16.5,
+                                        18
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type_chart": "line_chart",
+                            "plot_title": "Key Growth Drivers",
+                            "description": "A bar chart displaying the key growth drivers for market research services, such as technological advancements, increased demand for data-driven decision-making, and expanded online survey capabilities.",
+                            "x_axis_title": "Growth Driver",
+                            "x_values": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5
+                            ],
+                            "line_series": [
+                                {
+                                    "label": "Estimated Impact (scale 1-10)",
+                                    "y_values": [
+                                        9,
+                                        8,
+                                        7,
+                                        6,
+                                        5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type_chart": "line_chart",
+                            "plot_title": "Key Challenges",
+                            "description": "A pie chart illustrating the various challenges faced by market research services, including data privacy concerns, competition from in-house research teams, and rising operational costs.",
+                            "x_axis_title": "Challenge",
+                            "x_values": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5
+                            ],
+                            "line_series": [
+                                {
+                                    "label": "Percentage of Impact (%)",
+                                    "y_values": [
+                                        35,
+                                        25,
+                                        20,
+                                        10,
+                                        10
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "created": 1744488177,
+    "model": "gpt-4o-mini-2024-07-18",
+    "object": "chat.completion",
+    "service_tier": "default",
+    "system_fingerprint": "fp_80cf447eee",
+    "usage": {
+        "completion_tokens": 444,
+        "prompt_tokens": 1391,
+        "total_tokens": 1835,
+        "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+        }
+    }
+}
