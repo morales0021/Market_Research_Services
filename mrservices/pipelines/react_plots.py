@@ -76,7 +76,7 @@ class GetReactPlots:
             model=self.model
         )
 
-        return self.data_raw
+        return self.data_raw.output_text
     
     def _format_text(self, text):
         """
