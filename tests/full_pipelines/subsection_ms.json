@@ -1,0 +1,151 @@
+{
+    "content": "<important>The hydrogen market in France is experiencing significant growth, driven by strategic investments and a national commitment to decarbonization.</important> In 2023, the market was valued at approximately \u20ac1.4 to \u20ac3.5 billion, depending on hydrogen prices. <important>This valuation reflects the substantial role hydrogen plays in various sectors, including refining, ammonia production, and chemical applications.</important>\n\n<important>Looking ahead, the French hydrogen market is poised for continued expansion.</important> The government has allocated over \u20ac3 billion in public funding for low-carbon hydrogen technologies, underscoring its commitment to fostering a sustainable hydrogen economy. <important>Additionally, the hydrogen generation market is projected to reach a revenue of $5.1 billion by 2030, growing at a compound annual growth rate (CAGR) of 4.3% from 2024 to 2030.</important>\n\n<important>The French government's strategic initiatives, such as the National Strategy for Carbon-Free Hydrogen, aim to position hydrogen as a key player in achieving carbon neutrality and addressing environmental challenges.</important> These efforts are expected to drive the market's growth, with projections indicating a CAGR of 3.15% from 2024 to 2034.\n\n<important>In summary, the French hydrogen market is on a robust growth trajectory, supported by substantial government investments and strategic initiatives aimed at decarbonization.</important> This growth is expected to continue over the next five years, positioning France as a leader in the global hydrogen economy.",
+    "plots": [
+        {
+            "title": "Market Growth Over Time",
+            "description": "This chart will show the projected growth of the hydrogen market in France from 2023 to 2030, highlighting the market value over the years along with the projected CAGR.",
+            "legend": "Year",
+            "data": [
+                {
+                    "id": "Market Value Low",
+                    "color": "hsl(0, 70%, 50%)",
+                    "data": [
+                        {
+                            "x": 2023,
+                            "y": 1.4
+                        },
+                        {
+                            "x": 2024,
+                            "y": 1.8
+                        },
+                        {
+                            "x": 2025,
+                            "y": 2.0
+                        },
+                        {
+                            "x": 2026,
+                            "y": 2.3
+                        },
+                        {
+                            "x": 2027,
+                            "y": 2.6
+                        },
+                        {
+                            "x": 2028,
+                            "y": 3.0
+                        },
+                        {
+                            "x": 2029,
+                            "y": 3.5
+                        },
+                        {
+                            "x": 2030,
+                            "y": 5.1
+                        }
+                    ]
+                },
+                {
+                    "id": "Market Value High",
+                    "color": "hsl(180, 70%, 50%)",
+                    "data": [
+                        {
+                            "x": 2023,
+                            "y": 3.5
+                        },
+                        {
+                            "x": 2024,
+                            "y": 3.8
+                        },
+                        {
+                            "x": 2025,
+                            "y": 4.0
+                        },
+                        {
+                            "x": 2026,
+                            "y": 4.3
+                        },
+                        {
+                            "x": 2027,
+                            "y": 4.7
+                        },
+                        {
+                            "x": 2028,
+                            "y": 5.1
+                        },
+                        {
+                            "x": 2029,
+                            "y": 5.5
+                        },
+                        {
+                            "x": 2030,
+                            "y": 5.1
+                        }
+                    ]
+                }
+            ],
+            "type_chart": "line_chart"
+        },
+        {
+            "title": "Investment Allocation in Hydrogen Sectors",
+            "description": "This bar chart will display the allocation of government investments in various hydrogen applications such as refining, ammonia production, and chemical applications.",
+            "keys": [
+                "Investment (\u20ac billion)"
+            ],
+            "indexBy": "Hydrogen Sector",
+            "data": [
+                {
+                    "Hydrogen Sector": "Refining",
+                    "Investment (\u20ac billion)": 1.0
+                },
+                {
+                    "Hydrogen Sector": "Ammonia Production",
+                    "Investment (\u20ac billion)": 0.8
+                },
+                {
+                    "Hydrogen Sector": "Chemical Applications",
+                    "Investment (\u20ac billion)": 0.5
+                },
+                {
+                    "Hydrogen Sector": "Hydrogen Generation",
+                    "Investment (\u20ac billion)": 0.7
+                },
+                {
+                    "Hydrogen Sector": "R&D and Innovation",
+                    "Investment (\u20ac billion)": 0.3
+                }
+            ],
+            "type_chart": "bar_chart"
+        },
+        {
+            "title": "CAGR Comparison of Hydrogen Market Segments",
+            "description": "This pie chart will illustrate the projected growth rates (CAGR) of different segments within the hydrogen market over the next decade (2024-2034).",
+            "data": [
+                {
+                    "id": "Hydrogen Generation",
+                    "label": "Hydrogen Generation",
+                    "value": 4.3,
+                    "color": "hsl(0, 70%, 50%)"
+                },
+                {
+                    "id": "Other Applications",
+                    "label": "Other Applications",
+                    "value": 3.15,
+                    "color": "hsl(90, 70%, 50%)"
+                },
+                {
+                    "id": "Infrastructure",
+                    "label": "Infrastructure",
+                    "value": 3.5,
+                    "color": "hsl(180, 70%, 50%)"
+                },
+                {
+                    "id": "Fuel Cells",
+                    "label": "Fuel Cells",
+                    "value": 2.8,
+                    "color": "hsl(270, 70%, 50%)"
+                }
+            ],
+            "type_chart": "pie_chart"
+        }
+    ]
+}
