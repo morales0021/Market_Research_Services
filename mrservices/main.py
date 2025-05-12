@@ -1,6 +1,7 @@
 from typing import Union
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from mrservices.pipelines.subsection import GetSubsection
@@ -18,6 +19,16 @@ class Subsection(BaseModel):
     n_words: int
 
 app = FastAPI()
+
+
+# Add this block immediately after app creation
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://192.168.1.48:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # class Item(BaseModel):
 #     name: str
