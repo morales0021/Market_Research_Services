@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from mrservices.pipelines.subsection import GetSubsection
 from mrservices.pipelines.react_plots import GetReactPlots
 
-api_key  = "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"
+api_key  = "apikeyhere"
 sub_text = GetSubsection(api_key)
 sub_plots = GetReactPlots(api_key)
 
